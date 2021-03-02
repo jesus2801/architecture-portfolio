@@ -1,8 +1,10 @@
 import React, {Fragment} from 'react';
-import logo from '../images/logo.svg';
-import {StyledBanner, BlueprintLines, InfoCtn, Logo} from './styles/Banner';
+import facebook from '../images/facebook.png';
+import twitter from '../images/twitter.png';
+import instagram from '../images/instagram.png';
+import {StyledBanner, BlueprintLines, InfoCtn, Logo, Social} from './styles/Banner';
 
-const Banner = ({title, circleText, description}) => {
+const Banner = ({title, circleText, description, logo}) => {
   return (
     <Fragment>
       <StyledBanner>
@@ -16,6 +18,11 @@ const Banner = ({title, circleText, description}) => {
             <p>{description}</p>
           </div>
         </InfoCtn>
+        <Social>
+          <img src={facebook} alt="facebook logo" />
+          <img src={instagram} alt="instagram logo" />
+          <img src={twitter} alt="twitter logo" />
+        </Social>
       </StyledBanner>
       <BlueprintLines>
         <div className="line1"></div>

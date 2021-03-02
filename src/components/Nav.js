@@ -5,9 +5,9 @@ import {StyledNav} from './styles/Nav';
 function Nav() {
   return (
     <StyledNav className="nav-ctn">
-      <Link to="/">home</Link>
-      <Link to="/about">about</Link>
-      <Link to="/contac">contact</Link>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/contac">Contact</Link>
     </StyledNav>
   );
 }

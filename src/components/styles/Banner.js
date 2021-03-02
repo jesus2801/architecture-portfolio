@@ -10,7 +10,7 @@ export const StyledBanner = styled.div`
   width: 100%;
   height: ${bannerHeight};
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-image: url(${image});
@@ -18,6 +18,22 @@ export const StyledBanner = styled.div`
   background-size: cover;
   background-position: center;
   z-index: 2;
+  margin-bottom: 1000px;
+`;
+
+export const Social = styled.div`
+  position: absolute;
+  transform: translateY(150px);
+  z-index: 5;
+  img {
+    width: 30px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: transform 300ms ease;
+    &:active {
+      transform: scale(0.85);
+    }
+  }
 `;
 
 export const InfoCtn = styled.div`
@@ -59,6 +75,32 @@ export const InfoCtn = styled.div`
       text-align: center;
       text-transform: capitalize;
       line-height: 25px;
+    }
+  }
+  @media (max-width: 470px) {
+    .main h1 {
+      font-size: 30px;
+    }
+    .circle {
+      width: ${parseInt(circleSize) - 14}px;
+      min-width: ${parseInt(circleSize) - 14}px;
+      min-height: ${parseInt(circleSize) - 14}px;
+      height: ${parseInt(circleSize) - 14}px;
+    }
+  }
+  @media (max-width: 410px) {
+    .circle {
+      display: none;
+    }
+    .main {
+      width: 85%;
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        transform: translateX(0px);
+      }
     }
   }
 `;
