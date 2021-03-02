@@ -7,7 +7,7 @@ function Nav() {
     <StyledNav className="nav-ctn">
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
-      <Link to="/contac">Contact</Link>
+      <Link to="/contact">Contact</Link>
     </StyledNav>
   );
 }

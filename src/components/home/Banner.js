@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react';
-import facebook from '../images/facebook.png';
-import twitter from '../images/twitter.png';
-import instagram from '../images/instagram.png';
-import {StyledBanner, BlueprintLines, InfoCtn, Logo, Social} from './styles/Banner';
+import facebook from '../../images/facebook.png';
+import twitter from '../../images/twitter.png';
+import instagram from '../../images/instagram.png';
+import {StyledBanner, BlueprintLines, InfoCtn, Logo, Social} from '../styles/Banner';
 
 const Banner = ({title, circleText, description, logo}) => {
   return (

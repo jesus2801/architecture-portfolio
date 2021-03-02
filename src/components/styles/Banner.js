@@ -18,7 +18,6 @@ export const StyledBanner = styled.div`
   background-size: cover;
   background-position: center;
   z-index: 2;
-  margin-bottom: 1000px;
 `;
 
 export const Social = styled.div`
