@@ -13,3 +13,11 @@ export const ProjectsCtn = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `;
+
+export const Title = styled.h2`
+  width: min-content;
+  font-size: 35px;
+  margin: 20px auto 0 auto;
+  text-transform: uppercase;
+  color: #000;
+`;

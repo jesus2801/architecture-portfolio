@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {COLORS} from '../styles/variables';
 
 function Project({name, desc, photo}) {
   const StyledProject = styled.div`
@@ -13,6 +14,10 @@ function Project({name, desc, photo}) {
       width: 100%;
       height: 200px;
       border-radius: 3px 3px 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;
       img {
         position: relative;
@@ -28,6 +33,15 @@ function Project({name, desc, photo}) {
     h2 {
       text-transform: uppercase;
       margin: 10px 0;
+      &::after {
+        margin-top: 6px;
+        display: block;
+        content: '';
+        width: 40%;
+        height: 6px;
+        border-radius: 100px;
+        background-color: ${COLORS.primaryColor};
+      }
     }
     p {
       font-size: 14px;
@@ -36,7 +50,7 @@ function Project({name, desc, photo}) {
   return (
     <StyledProject>
       <div>
-        <img src={photo} />
+        <img src={photo} alt="" />
       </div>
       <h2>{name}</h2>
       <p>{desc}</p>
